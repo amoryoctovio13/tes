@@ -111,7 +111,7 @@
     width: 280px;
     overflow: hidden;
     background: -webkit-linear-gradient(left, #5eb1ff 0%, #1f80db 100%);
-    background: linear-gradient(to right, #0000CD 0%, #0000CD 100%);
+    background: linear-gradient(to right, #1E90FF 0%, #0000CD 100%);
     box-shadow: 2px 0 32px rgba(0, 0, 0, 0.05);
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -721,7 +721,7 @@ ul.breadcrumbs {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         background: -webkit-linear-gradient(left, #5eb1ff 5%, #1f80db 100%);
-        background: linear-gradient(to right, #0000CD 5%, #0000CD 100%);
+        background: linear-gradient(to right, #1E90FF 5%, #0000CD 100%);
     padding: 17px 38px;
     position: relative;
 }
