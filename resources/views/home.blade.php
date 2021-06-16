@@ -1,25 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <div class="col-md-12 mt-5">
-            <div class="card">
-                <div class="card-header">
-                    <h3>Dashboard</h3>
-                </div>
-                <div class="card-body">
-                    <h5>Selamat datang di halaman dashboard, <strong>{{ Auth::user()->name }}</strong></h5>
-                    <a href="{{ route('logout') }}" class="btn btn-danger">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+@extends('master.layout')
+
+
+@section('content')
+
+<!--untuk diagram list surat keluar-->
+    <div class="row">
+      <!--BOX-->
+      <div class="box box-primary">
+        <!--BOX BODY-->
+        <div class="box-body">
+          <script src="https://code.highcharts.com/highcharts.js"></script>
+          <script src="https://code.highcharts.com/modules/exporting.js"></script>
+          <script src="https://code.highcharts.com/modules/export-data.js"></script>
+          <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+          <style type="text/css">
+            .highcharts-figure, .highcharts-data-table table {
+              min-width: 310px; 
+              max-width: 800px;
+              margin: 1em auto;
+            }
+            #container {
+              height: 400px;
+            }
+            .highcharts-data-table table {
+              font-family: Verdana, sans-serif;
+              border-collapse: collapse;
+              border: 1px solid #EBEBEB;
+              margin: 10px auto;
+              text-align: center;
+              width: 100%;
+              max-width: 500px;
+            }
+            .highcharts-data-table caption {
+              padding: 1em 0;
+              font-size: 1.2em;
+              color: #555;
+            }
+            .highcharts-data-table th {
+              font-weight: 600;
+              padding: 0.5em;
+            }
+            .highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+              padding: 0.5em;
+            }
+            .highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+              background: #f8f8f8;
+            }
+            .highcharts-data-table tr:hover {
+              background: #f1f7ff;
+            }
+          </style>
+
+         
+	@endsection
