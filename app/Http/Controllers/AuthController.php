@@ -107,6 +107,25 @@ class AuthController extends Controller
             return redirect()->route('register');
         }
     }
+    public function show($id)
+    {
+        $user = User::find($id);
+
+        $users = User::find($id);
+
+        return view('page.profile', compact('users','profile'));
+    }
+    public function update(Request $request, $id){
+
+        $user = User::find($id);
+
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = $request->password;
+        $user->save();
+
+        return redirect('/profile');
+    }
  
     public function logout()
     {
