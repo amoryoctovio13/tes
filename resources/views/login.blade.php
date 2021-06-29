@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
+<div id="preloader">
+        <div class="loader"></div>
+    </div>
     <div class="container">
         <div class="col-md-4 offset-md-4 mt-5">
             <div class="card">

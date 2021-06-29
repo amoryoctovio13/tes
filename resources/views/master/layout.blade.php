@@ -67,20 +67,31 @@
                                 <span class="pull-right-container"></span>
                               </a>
                             </li>
-                            <li class="{{Request::is('/') ? 'active' : null }}">
-                              <a href="{{url('/instansi')}}">
-                                <i class="fa fa-building-o" style="color:#ffffff"></i>
-                                <span>Menu</span>
-                              </a>
-                            </li>
-                            <li class="{{Request::is('/') ? 'active' : null }}">
-                              <a href="{{url('/divisi')}}">
-                                <i class="fa fa-paper-plane" style="color:#ffffff"></i>
-                                <span>Layanan</span>
-                              </a>
+                            <li>
+                                  <li class="treeview">
+                                  <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-envelope-o" style="color:#ffffff"></i><span>Menu</span></a>
+                                    <ul class="collapse">
+                                    <ul class="treeview-menu">
+                                      <li class="{{Request::is('/dropdown/dpage1') ? 'active' : null }}"><a href="/jenissuratkeluar"><i class=""></i> Kemacetan</a></li>
+                                      <li class="{{Request::is('/dropdown/dpage2') ? 'active' : null }}"><a href="/listsuratkeluar"><i class=""></i> Berita</a></li>
+                                      <li class="{{Request::is('/dropdown/dpage3') ? 'active' : null }}"><a href="/statussuratkeluar"><i class=""></i> Analitik</a></li>
+                                      <li class="{{Request::is('/dropdown/dpage4') ? 'active' : null }}"><a href="/laporansuratkeluar"><i class=""></i> Display Map</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
                             </li>
                             <li>
-                              <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-envelope-o" style="color:#ffffff"></i><span>Kontak</span></a>
+                                  <li class="treeview">
+                                  <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-folder" style="color:#ffffff"></i><span>Layanan</span></a>
+                                    <ul class="collapse">
+                                    <ul class="treeview-menu">
+                                      <li class="{{Request::is('/dropdown/dpage1') ? 'active' : null }}"><a href="/jenissuratkeluar"><i class=""></i> Pelaporan</a></li>
+                                      <li class="{{Request::is('/dropdown/dpage2') ? 'active' : null }}"><a href="/listsuratkeluar"><i class=""></i> Persimpangan</a></li>
+                                      <li class="{{Request::is('/dropdown/dpage3') ? 'active' : null }}"><a href="/statussuratkeluar"><i class=""></i> Status</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                            </li>
                     </nav>
                 </div>
             </div>
@@ -113,15 +124,6 @@
             </div>
             <!-- page title area end -->
         @yield('content')
-   </div>
-                <!-- footer area start-->
-        <footer>
-            <div class="footer-area">
-            
-            </div>
-        </footer>
-        <!-- footer area end-->
-    </div>
     <!-- page container area end -->
 
     <!-- jquery latest version -->

@@ -14,9 +14,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('logout', 'AuthController@logout')->name('logout');
 
     //root untuk user profile
-    Route::get('/profile', function () {
+Route::get('/profile', function () {
         return view('page.profile');
     })->name('profile');
  
-    Route::post('/profile/update/{$id}', 'AuthController@update');
+Route::put('/profile/update/{$id}', 'ProfileController@update');
 });
