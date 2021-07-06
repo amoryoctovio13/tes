@@ -85,9 +85,9 @@
                                   <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-folder" style="color:#ffffff"></i><span>Layanan</span></a>
                                     <ul class="collapse">
                                     <ul class="treeview-menu">
-                                      <li class="{{Request::is('/dropdown/dpage1') ? 'active' : null }}"><a href="/jenissuratkeluar"><i class=""></i> Pelaporan</a></li>
-                                      <li class="{{Request::is('/dropdown/dpage2') ? 'active' : null }}"><a href="/listsuratkeluar"><i class=""></i> Persimpangan</a></li>
-                                      <li class="{{Request::is('/dropdown/dpage3') ? 'active' : null }}"><a href="/statussuratkeluar"><i class=""></i> Status</a></li>
+                                      <li class="{{Request::is('/dropdown/dpage5') ? 'active' : null }}"><a href="/submitlaporaninsiden"><i class=""></i> Pelaporan</a></li>
+                                      <li class="{{Request::is('/dropdown/dpage6') ? 'active' : null }}"><a href="/listsuratkeluar"><i class=""></i> Persimpangan</a></li>
+                                      <li class="{{Request::is('/dropdown/dpage7') ? 'active' : null }}"><a href="/statussuratkeluar"><i class=""></i> Status</a></li>
                                     </ul>
                                   </li>
                                 </ul>

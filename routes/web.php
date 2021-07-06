@@ -12,11 +12,13 @@ Route::group(['middleware' => 'auth'], function () {
  
     Route::get('home', 'HomeController@index')->name('home');
     Route::get('logout', 'AuthController@logout')->name('logout');
-
+});
     //root untuk user profile
-Route::get('/profile', function () {
+    Route::get('/profile', function () {
         return view('page.profile');
     })->name('profile');
  
 Route::put('/profile/update/{$id}', 'ProfileController@update');
-});
+
+Route::put('/submitlaporaninsiden', 'LaporanInsidenController@index');
+
