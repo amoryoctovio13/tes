@@ -20,5 +20,11 @@ Route::group(['middleware' => 'auth'], function () {
  
 Route::put('/profile/update/{$id}', 'ProfileController@update');
 
-Route::put('/submitlaporaninsiden', 'LaporanInsidenController@index');
+Route::get('/laporan_insiden', 'LaporanInsidenController@index');
+Route::get('/laporan_insiden/create', 'LaporanInsidenController@create');
+Route::post('/laporan_insiden/save', 'LaporanInsidenController@store');
+
+Route::get('/persimpangan','PersimpanganController@index');
+Route::get('/persimpangan/create', 'PersimpanganController@create');
+Route::post('/persimpangan/save', 'PersimpanganController@store');
 

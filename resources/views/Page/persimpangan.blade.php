@@ -7,7 +7,7 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form method="post" action="/persimpangan/save">
+            <form method="post" action="">
             {{ csrf_field() }}
               <div class="box-body">
                 <div class="form-group">
@@ -39,6 +39,7 @@
 
               <div class="box-footer">
                 <input type="submit" class="btn btn-primary" value="Submit">
+                <a href="/instansi" button type="button" class="btn btn-default badge-pill" style="padding-right:80px,width:80px">Back</a>
               </div>
             </form>
           </div>

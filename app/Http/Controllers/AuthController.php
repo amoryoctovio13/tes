@@ -9,7 +9,6 @@ use Validator;
 use Hash;
 use Session;
 use App\User;
-use App\Users;
  
  
 class AuthController extends Controller
