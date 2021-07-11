@@ -1,10 +1,23 @@
 @extends('master.layout')
 
 @section('content')
-<div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title"><b>Submit Laporan Insiden</b></h3>
-            </div>
+<div class="box box-primary"><div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header" style="">
+      <ol class="breadcrumb">
+        <li><i class="fa fa-dashboard"></i> User profile</a></li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+  <div style="padding:2px">
+    <section class="content">
+        <div class="col-md-12">
+          <div class="nav-tabs-custom">
+            <div class="tab-content">
+              <div class="active tab-pane" id="activity">   
+
+              <div class="tab-pane" id="settings">
             <!-- /.box-header -->
             <!-- form start -->
             <form method="post" action="/laporan_insiden/save">
@@ -42,4 +55,10 @@
               </div>
             </form>
           </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 @endsection
